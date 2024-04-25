@@ -144,6 +144,11 @@
   width: 36px;
   height: 36px;
   background-size: 7px 14px;
+  transition: 0.6s;
+}
+
+.stages__arrow:hover {
+  background-color: #FBCE51;
 }
 
 .stages__arrow-left {
