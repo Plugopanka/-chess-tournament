@@ -118,6 +118,8 @@
 .intro__button-text {
   display: inline-block;
   max-width: 150px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .intro__circle {
