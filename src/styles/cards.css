@@ -1,0 +1,139 @@
+.cards {
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-sizing: border-box;
+}
+
+.cards__list {
+  max-width: 1222px;
+}
+
+.cards__element {
+  width: 404px;
+  text-align: center;
+}
+
+.cards__title {
+  margin: 0;
+  padding: 0;
+  font-size: 54px;
+  font-family: "Merriweather";
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #313131;
+}
+
+.cards__image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+}
+
+.cards__name {
+  font-family: "GolosText", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 24px;
+  text-align: center;
+  margin: 28px 0 6px 0;
+  color: #313131;
+}
+
+.cards__text {
+  font-family: "GolosText", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 20px;
+  color: rgba(49, 49, 49, 0.6);
+}
+
+.cards__button {
+  font-family: "GolosText", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 66px;
+  width: 113px;
+  height: 35px;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid #3057a2;
+  background: transparent;
+  color: #3057a2;
+  transition: 0.6s;
+}
+
+.cards__button:hover {
+  background: #3057a2;
+  border: none;
+  color: #fff;
+}
+
+.cards__bar {
+  position: absolute;
+  top: -114px;
+  right: -18px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cards__arrow {
+  background: url("./../images/left-arrow.svg") center no-repeat #313131;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+@media screen and (max-width: 870px) {
+  .cards__title {
+    max-width: 580px;
+  }
+
+  .cards__bar {
+    top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    padding-bottom: 100px;
+    gap: 40px;
+  }
+
+  .cards__title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .cards__carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cards__image {
+    width: 244px;
+    height: 244px;
+  }
+
+  .cards__bar {
+    position: static;
+    height: 36px;
+    gap: 12px;
+  }
+
+  .cards__arrow {
+    width: 36px;
+    height: 36px;
+    background-size: 7px 14px;
+  }
+}

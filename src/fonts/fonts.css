@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Merriweather";
+  font-weight: 400;
+  src: url("Merriweather-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Mrriweather";
+  font-weight: 700;
+  src: url("Merriweather-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-weight: 400;
+  src: url("GolosText-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-weight: 500;
+  src: url("GolosText-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-weight: 600;
+  src: url("GolosText-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GolosText";
+  font-weight: 700;
+  src: url("GolosText-Bold.ttf") format("ttf");
+}

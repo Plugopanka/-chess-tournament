@@ -1,0 +1,57 @@
+.marquee {
+  display: flex;
+  overflow-x: hidden;
+  background: #f54932;
+  height: 60px;
+  align-items: center;
+}
+
+.marquee__text {
+  margin: 0;
+  font-size: 22px;
+  font-family: "Merriweather";
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.1;
+  white-space: nowrap;
+  display: inline-block;
+  color: #fff;
+}
+
+.marquee__text_first {
+  animation: marquee1 30s infinite linear;
+  animation-delay: -30s;
+}
+
+.marquee__text_second {
+  animation: marquee2 30s infinite linear;
+  animation-delay: -15s;
+}
+
+@media screen and (max-width: 768px) {
+  .marquee {
+    height: 38px;
+  }
+
+  .marquee__text {
+    font-size: 16px;
+  }
+}
+
+@keyframes marquee1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
